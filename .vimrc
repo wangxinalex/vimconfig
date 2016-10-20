@@ -39,7 +39,7 @@ Bundle 'SudoEdit.vim'
 Bundle 'EasyGrep'
 Bundle 'VOoM'
 Bundle 'VimIM'
-Bundle 'minibufexpl.vim'
+"Bundle 'minibufexpl.vim'
 Bundle 'The-NERD-tree'
 Bundle 'Tagbar'
 "..................................
@@ -138,13 +138,22 @@ func! Astyle()
 endfunc
 
 
-let g:miniBufExplMapWindowNavVim=1
-let g:miniBufExplMapWindowNavArrows=1
-let g:miniBufExplMapCTabSwitchBufs=1
-let g:miniBufExplModSelTarget=1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplorerMoreThanOne = 0
+"let g:miniBufExplMapWindowNavVim=1
+"let g:miniBufExplMapWindowNavArrows=1
+"let g:miniBufExplMapCTabSwitchBufs=1
+"let g:miniBufExplModSelTarget=1
+"let g:miniBufExplMapCTabSwitchBufs = 1
+"let g:miniBufExplorerMoreThanOne = 0
 
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+nmap <C-\>s :cs f s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>g :cs f g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>c :cs f c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>d :cs f d <C-R>=expand("<cword>")<CR><CR>
