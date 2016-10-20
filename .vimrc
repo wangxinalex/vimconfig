@@ -146,3 +146,5 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplorerMoreThanOne = 0
 
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+
+let g:airline_powerline_fonts=1
