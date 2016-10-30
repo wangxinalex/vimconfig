@@ -57,6 +57,7 @@ set number
 " set foldmethod=indent
 set foldmethod=syntax
 set foldcolumn=4
+set backspace=indent,eol,start
 
 " colorscheme desert
 
